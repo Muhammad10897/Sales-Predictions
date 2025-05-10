@@ -1,0 +1,7 @@
+pandas
+scikit-learn=1.2.2
+imbalanced-learn
+matplotlib seaborn
+mlflow=2.11.3
+xgboost
+statsmodels

@@ -1,0 +1,22 @@
+name: sales-prediction
+conda_env: conda.yaml
+
+entry_points:
+
+  random_forest:
+    parameters:
+      n: {type: int, default: 350}
+      d: {type: int, default: 15}
+    command: "python forest_script.py -n {n} -d {d}"
+  
+  XGBoost:
+    command: "python XGBoost.py"
+
+  LSTM:
+    command: "python long_short-term_memory_LSTM.py"
+
+  ETS:
+    command: "python exponential_smoothing_ETS.py"
+
+  ARIMA:
+    command: "python ARIMA.py"
